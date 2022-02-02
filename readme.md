@@ -11,6 +11,12 @@
 ### **Features**
 É uma branch que é criada para desenvolver cada nova funcionalidade. Usa como base a Branch Develop e, após finalizar a implementação, faz um ```merge``` com a Branch Develop.
 
+#### Antes de finalizar a Feature é necessário  publicar as alterações para o repositório remoto
+
+```
+git push origin nome_da_feature
+```
+
 #### Criando uma Feature
 ```
 git flow feature start nome_da_feature
@@ -19,6 +25,12 @@ git flow feature start nome_da_feature
 #### Com um único comando faz o merge com a Branch Develop, exclui a Branch de Feature e faz o checkout para a Branch Develop
 ```
 git flow feature finish nome_da_feature
+```
+
+#### agora tem que publicar as alterações da Branch Develop para o repositório remoto
+
+```
+git push origin develop 
 ```
 
 ### **Release**
