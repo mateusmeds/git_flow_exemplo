@@ -59,7 +59,3 @@ git push origin develop && git push origin master
 
 ### **Hotfixes**
 É a Branch responsável por fazer correções de erros que ocorrem em produção. Essa branch surge como uma necessidade de corrigir erros imediatos sem precisar passar por todo o fluxo de desenvolvimento novamente. Uma vez corrigidos os erros, faz um merge com a Branch Master e a Develop.
-
-```
-git push origin develop && git push origin master
-```
