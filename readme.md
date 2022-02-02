@@ -59,3 +59,23 @@ git push origin develop && git push origin master
 
 ### **Hotfixes**
 É a Branch responsável por fazer correções de erros que ocorrem em produção. Essa branch surge como uma necessidade de corrigir erros imediatos sem precisar passar por todo o fluxo de desenvolvimento novamente. Uma vez corrigidos os erros, faz um merge com a Branch Master e a Develop.
+
+#### Criando um hotfix
+```
+git flow hotfix start nome_da_hotfix
+```
+
+#### Agora pode enviar esse hotfix para o servidor remoto 
+```
+git flow hotfix publish nome_da_hotfix
+```
+
+#### Após resolver o problema e realizar os commits necessários, esse hotfix pode ser finalizado
+```
+git flow hotfix finish -m "Mensagem de hotfix" nome_da_hotfix
+```
+
+#### Após isso, publicar as alterações das Branches develop e master no repositório remoto
+```
+git push origin develop && git push origin master 
+```
